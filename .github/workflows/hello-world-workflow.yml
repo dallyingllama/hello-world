@@ -1,5 +1,10 @@
+name: hello world
+run-name: ${{ github.actor }} is learning GitHub Actions
 on:
-  workflow_dispatch
+  workflow_dispatch:
+  push:
+    branches:
+      - master
 
 jobs:
   hello_world_job:
