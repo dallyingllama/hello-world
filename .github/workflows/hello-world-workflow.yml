@@ -8,9 +8,7 @@ jobs:
       #This step checks out a copy of the repo.
       - name: Hello world checkout
         uses: actions/checkout@v4
-      #This step references the diretory containing the action.
-      - name: Use local hello-world action
-        uses: ./.github/actions/hello-world-action
+
       - name: Group of log lines
         run: |
           echo "::group::Hello Worlds"
